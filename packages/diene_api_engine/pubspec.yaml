@@ -3,23 +3,18 @@ name: diene_api_engine
 # ("search engines display only the first part"). The previous wording measured
 # 284 characters and cost the whole 10-point pubspec section.
 description: >-
-  Typed OA3 backend-client engine: wraps generated OpenAPI SDKs into
-  Result/Problem outcomes, registers N backends, retries once on network
-  failure, ships a dormant rescue router.
-version: 0.0.0
+  Typed OA3 backend-client engine: wraps generated OpenAPI SDKs into Result/Problem outcomes, registers N backends, retries once on network failure, ships a dormant rescue router.
+version: 1.0.0
 repository: https://github.com/AtomiCloud/diene.dart_api_engine
 issue_tracker: https://github.com/AtomiCloud/diene.dart_api_engine/issues
 homepage: https://github.com/AtomiCloud/diene.dart_api_engine
-
 topics:
   - api
   - openapi
   - http
   - result
   - resilience
-
 resolution: workspace
-
 # This package depends on the Flutter SDK, transitively and unavoidably:
 # diene_auth_engine (the IAuth / ResourceKey / ResourceToken seam this engine
 # keys its per-backend tokens off) declares `flutter: '>=3.24.0'`. MEASURED, not
@@ -34,7 +29,6 @@ resolution: workspace
 environment:
   sdk: '>=3.12.0 <4.0.0'
   flutter: '>=3.24.0'
-
 dependencies:
   collection: ^1.19.1
   # Owned sibling contracts, each pinned to the NEWEST published version. Under
@@ -56,7 +50,6 @@ dependencies:
   json_annotation: ^4.12.0
   meta: ^1.18.0
   retrofit: ^4.9.2
-
 dev_dependencies:
   dart_code_linter: ^4.1.8
   # `flutter_test` REPLACES the `test` dev_dependency the pure-Dart siblings
